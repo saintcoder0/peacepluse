@@ -13,7 +13,7 @@ import {
   BookOpen,
   Activity
 } from "lucide-react";
-import { Spline } from '@splinetool/react-spline';
+import Spline from '@splinetool/react-spline';
 import { ChatBot } from "./ChatBot";
 
 interface DashboardProps {
