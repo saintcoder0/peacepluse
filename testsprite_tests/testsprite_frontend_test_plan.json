@@ -1,0 +1,455 @@
+[
+  {
+    "id": "TC001",
+    "title": "AI ChatBot Trauma-Informed Response and Crisis Detection",
+    "description": "Verify that the AI ChatBot provides trauma-informed responses, correctly detects crisis keywords, and suggests appropriate crisis support resources.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the ChatBot interface."
+      },
+      {
+        "type": "action",
+        "description": "Send a general mental wellness query to the ChatBot."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that the ChatBot provides empathetic, trauma-informed guidance."
+      },
+      {
+        "type": "action",
+        "description": "Send a message containing crisis-related keywords (e.g., 'suicide', 'harm')."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the ChatBot detects crisis and presents appropriate crisis support resources within the response."
+      },
+      {
+        "type": "action",
+        "description": "Engage in multiple conversational exchanges to trigger AI habit suggestion."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm the ChatBot automatically suggests personalized habits based on conversation context."
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Habit Tracker: Add, Manage, and AI Deduplication",
+    "description": "Ensure users can add, edit, complete, and delete habits with correct daily management, streak updates, and the AI prevents duplicate habits.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Habit Tracker screen."
+      },
+      {
+        "type": "action",
+        "description": "Add a new habit under a specific category."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the habit appears in the list with correct category and default status."
+      },
+      {
+        "type": "action",
+        "description": "Mark the habit as completed for today."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that the daily streak count and progress indicators update correctly."
+      },
+      {
+        "type": "action",
+        "description": "Attempt to add a habit that is semantically similar to an existing one."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm that the AI deduplication system warns about duplicates and prevents redundant habits."
+      },
+      {
+        "type": "action",
+        "description": "Edit an existing habit's name and category."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate that the changes are saved and reflected in the tracker."
+      },
+      {
+        "type": "action",
+        "description": "Delete a habit."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm the habit is removed and streak counts adjust accordingly."
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Mood Tracker Manual and AI-Detected Mood Entry",
+    "description": "Verify that the Mood Tracker supports manual mood entries using a 5-point scale, integrates mood data detected via AI from chat conversations, and displays mood history accurately.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Mood Tracker component."
+      },
+      {
+        "type": "action",
+        "description": "Manually select a mood on the 5-point scale and add optional notes."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that the mood entry is saved with timestamp and appears in history."
+      },
+      {
+        "type": "action",
+        "description": "Engage with the AI ChatBot and trigger mood analysis."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that the mood detected by AI is automatically added to the Mood Tracker with correct data."
+      },
+      {
+        "type": "action",
+        "description": "View mood history with notes and timestamps."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm mood representations and notes are accurately displayed in chronological order."
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "Journal System Full CRUD with Mood Association",
+    "description": "Test the journaling component supports creating, reading, updating, and deleting daily entries with titles and associated moods organized by date.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Journal section."
+      },
+      {
+        "type": "action",
+        "description": "Create a new journal entry with title, text content, and select an associated mood."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the new entry appears under the correct date with mood association."
+      },
+      {
+        "type": "action",
+        "description": "Read and open an existing journal entry."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that the content and mood are displayed correctly."
+      },
+      {
+        "type": "action",
+        "description": "Update the title, content, and mood of an existing journal entry."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm changes are saved and correctly shown in the entry."
+      },
+      {
+        "type": "action",
+        "description": "Delete a journal entry."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the entry no longer appears in the list."
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "Sleep Tracker Logging, Sleep Duration and Quality Assessment",
+    "description": "Validate that users can log bedtime and wake-up time, the app calculates correct sleep duration, assesses sleep quality, and tracks historical sleep patterns.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open the Sleep Tracker component."
+      },
+      {
+        "type": "action",
+        "description": "Enter bedtime and wake-up time for the current day."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm that the sleep duration is calculated accurately."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that sleep quality is assessed and displayed based on predefined criteria."
+      },
+      {
+        "type": "action",
+        "description": "Log multiple days of sleep data."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify sleep patterns and trends are visualized correctly over time."
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "Todo System Conversion to Habits with AI Suggestions",
+    "description": "Ensure the todo management system properly converts todo tasks to trackable habits and integrates AI habit suggestions based on user input.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Todo Management section."
+      },
+      {
+        "type": "action",
+        "description": "Add a new todo item."
+      },
+      {
+        "type": "action",
+        "description": "Convert the todo item into a daily habit."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm the habit is created in the Habit Tracker with correct linkage."
+      },
+      {
+        "type": "action",
+        "description": "Input keywords or phrases to trigger AI habit suggestions."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that AI suggestions appear and can be accepted or dismissed."
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Data Persistence and Offline Functionality",
+    "description": "Test that all wellness data including moods, habits, journal entries, sleep logs, and todos persist locally using localStorage and remain accessible offline without cloud dependencies.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Input data across multiple features (Mood, Habit, Journal, Sleep, Todo)."
+      },
+      {
+        "type": "action",
+        "description": "Close and reload the application without internet connectivity."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify all previously entered data remains intact and accessible."
+      },
+      {
+        "type": "action",
+        "description": "Attempt using core features offline (add, edit, delete)."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm all operations complete successfully and data persists locally."
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Responsive Design and Accessibility Compliance",
+    "description": "Verify the application UI is responsive across different device screen sizes and meets accessibility standards including proper contrast ratios, keyboard navigation, and tooltips.",
+    "category": "ui",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Resize the application window across mobile, tablet, and desktop dimensions."
+      },
+      {
+        "type": "assertion",
+        "description": "Check UI elements adjust layout appropriately without loss of functionality or data."
+      },
+      {
+        "type": "action",
+        "description": "Navigate through the app using keyboard only."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm all interactive elements are reachable and usable with visible focus states."
+      },
+      {
+        "type": "action",
+        "description": "Inspect color contrast of text and interactive components."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate contrast ratios meet WCAG guidelines."
+      },
+      {
+        "type": "action",
+        "description": "Hover or focus on elements with tooltips."
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure tooltips appear correctly with descriptive text."
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Toast Notifications: Display, Color-coding, and Auto-dismissal",
+    "description": "Test the toast notification system to ensure messages display correctly with color-coded statuses (success, info, error) and auto-dismiss after 5 seconds.",
+    "category": "ui",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Trigger various user actions that generate toast notifications (e.g., adding a habit, AI habit suggestions, error in input)."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate that each toast displays with the correct color coding and message text."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm toasts automatically dismiss after 5 seconds without user intervention."
+      },
+      {
+        "type": "action",
+        "description": "Trigger multiple toast notifications in quick succession."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that notifications stack or queue gracefully without UI glitches."
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Performance Optimization: React Hooks and Lazy Loading",
+    "description": "Evaluate application performance focusing on efficient React hooks usage, state memoization, lazy loading readiness, and correct background AI data processing.",
+    "category": "performance",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate through major app components rapidly (ChatBot, Habit Tracker, Mood Tracker, Journal, Sleep Tracker)."
+      },
+      {
+        "type": "assertion",
+        "description": "Monitor that component rendering is smooth with no noticeable lag or frame drops."
+      },
+      {
+        "type": "action",
+        "description": "Inspect React profiler and verify hooks usage (e.g., useMemo, useCallback) optimizes renders."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm state updates do not cause unnecessary re-renders."
+      },
+      {
+        "type": "action",
+        "description": "Test lazy loading by navigating to less frequently used components for delayed loading."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the components load correctly on demand without blocking the main thread."
+      },
+      {
+        "type": "action",
+        "description": "Simulate background AI data processing (e.g., habit suggestions) while using the app."
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure background processes do not degrade UI responsiveness."
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "Dashboard Wellness Metrics Accuracy and Navigation",
+    "description": "Ensure the Dashboard overview correctly presents key wellness metrics (mood, habits, sleep) and provides quick navigation to core features.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Log in and land on the Dashboard."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify wellness metrics accurately reflect current data for mood, habits, and sleep."
+      },
+      {
+        "type": "action",
+        "description": "Click on metric summary cards or buttons for Mood Tracker, Habit Tracker, Sleep Tracker, Journal, and ChatBot."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm navigation to respective feature pages is seamless and data correctly displayed."
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "Mobile-Responsive Navigation Functionality",
+    "description": "Test that the main Navigation system adapts to mobile and desktop devices with modern UI controls and remains fully functional.",
+    "category": "ui",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Access the app on various screen sizes including mobile portrait, landscape, tablet, and desktop."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm navigation menus collapse or expand appropriately depending on screen size."
+      },
+      {
+        "type": "action",
+        "description": "Use navigation controls (hamburger menu, tabs, buttons) to move between sections."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify navigation is responsive, gestures or touch inputs work, and UI components display correctly on each device."
+      }
+    ]
+  },
+  {
+    "id": "TC013",
+    "title": "User Settings: Preferences and Configuration Management",
+    "description": "Verify that user preferences such as notification settings, theme selection, and app configurations can be viewed, updated, and persist across sessions.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Settings page."
+      },
+      {
+        "type": "action",
+        "description": "Change various settings including notification preferences and theme."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm settings are saved and applied immediately."
+      },
+      {
+        "type": "action",
+        "description": "Reload the app and verify settings persist correctly."
+      }
+    ]
+  }
+]

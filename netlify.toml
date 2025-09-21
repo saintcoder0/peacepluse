@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+# Add any Vite env vars you need, example:
+# VITE_API_URL = "https://api.example.com"
+
+[functions]
+# If you add Netlify Functions, configure their directory here
+# directory = "netlify/functions"

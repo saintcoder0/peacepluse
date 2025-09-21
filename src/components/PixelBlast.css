@@ -1,0 +1,31 @@
+.pixel-blast-root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.pixel-blast-root > canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+  pointer-events: none; /* ensure canvas doesn't block interactions */
+}
+.pixel-blast-container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ensure the canvas fills */
+.pixel-blast-container > canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+  pointer-events: none; /* ensure canvas doesn't block interactions */
+}
+

@@ -1,0 +1,16 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:8080",
+  "executionArgs": {
+    "projectName": "peace-pulse-journal",
+    "projectPath": "/Users/dhairyapatel/Desktop/peace-pulse-journal-main",
+    "testIds": [],
+    "additionalInstruction": "Focus on comprehensive testing of the ChatBot component including message sending, AI responses, mood analysis, habit suggestions, error handling, and UI interactions. Test both the AI-powered features and fallback responses when the API is unavailable.",
+    "envs": {
+      "API_KEY": "sk-user-1VMYgVnbkji6lSBjm1FsCfNLLVoYRtjJ7ZrWwqFgRPywSg82nHF32T-9netVqXd_8QiyQPsEArAbH6Lj9H5xpgWJthlSpTnrmKY_sLrQaVF-JG2dnGDe1pkzNWbKnaLrauw"
+    }
+  },
+  "proxy": "http://41c6bd95-cfda-4268-8670-a3fbf55fe42b:IM6wXYhRvLHcmoz6Av9NkozL1ZP2qyhL@tun.testsprite.com:8080"
+}

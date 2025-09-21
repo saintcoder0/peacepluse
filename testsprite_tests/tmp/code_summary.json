@@ -1,0 +1,94 @@
+{
+  "tech_stack": [
+    "TypeScript",
+    "React",
+    "Vite",
+    "Tailwind CSS",
+    "Shadcn/ui",
+    "Google Generative AI",
+    "React Router DOM",
+    "React Hook Form",
+    "Zod",
+    "TanStack Query",
+    "Recharts",
+    "Date-fns",
+    "Lucide React"
+  ],
+  "features": [
+    {
+      "name": "ChatBot",
+      "description": "AI-powered mental wellness companion using Google Gemini API with trauma-informed responses, mood analysis, and habit suggestions",
+      "files": ["src/components/ChatBot.tsx"]
+    },
+    {
+      "name": "Wellness Context",
+      "description": "Global state management for wellness data including mood entries, habits, and chat messages",
+      "files": ["src/hooks/wellness-context.tsx"]
+    },
+    {
+      "name": "Mood Tracker",
+      "description": "Component for tracking daily mood with visual indicators and mood history",
+      "files": ["src/components/MoodTracker.tsx"]
+    },
+    {
+      "name": "Habit Tracker",
+      "description": "Daily habit management system with categories and progress tracking",
+      "files": ["src/components/HabitTracker.tsx"]
+    },
+    {
+      "name": "Journal",
+      "description": "Personal journaling component for daily reflections and thoughts",
+      "files": ["src/components/Journal.tsx"]
+    },
+    {
+      "name": "Sleep Tracker",
+      "description": "Sleep quality and duration tracking with insights and recommendations",
+      "files": ["src/components/SleepTracker.tsx"]
+    },
+    {
+      "name": "Calendar View",
+      "description": "Calendar interface for viewing wellness data across different time periods",
+      "files": ["src/components/CalendarView.tsx"]
+    },
+    {
+      "name": "Dashboard",
+      "description": "Main overview page displaying wellness metrics and quick access to features",
+      "files": ["src/components/Dashboard.tsx"]
+    },
+    {
+      "name": "Navigation",
+      "description": "Main navigation component with mobile-responsive design",
+      "files": ["src/components/Navigation.tsx"]
+    },
+    {
+      "name": "Settings",
+      "description": "User preferences and application configuration management",
+      "files": ["src/components/Settings.tsx"]
+    },
+    {
+      "name": "UI Components",
+      "description": "Reusable UI components built with Shadcn/ui and Radix UI primitives",
+      "files": ["src/components/ui/*"]
+    },
+    {
+      "name": "Mobile Hooks",
+      "description": "Custom hooks for mobile device detection and responsive behavior",
+      "files": ["src/hooks/use-mobile.tsx"]
+    },
+    {
+      "name": "Toast Notifications",
+      "description": "Toast notification system for user feedback and alerts",
+      "files": ["src/hooks/use-toast.ts", "src/components/ui/toast.tsx", "src/components/ui/toaster.tsx"]
+    },
+    {
+      "name": "Routing",
+      "description": "Client-side routing with React Router for navigation between pages",
+      "files": ["src/pages/Index.tsx", "src/pages/NotFound.tsx", "src/App.tsx"]
+    },
+    {
+      "name": "Utilities",
+      "description": "Helper functions and utility classes for common operations",
+      "files": ["src/lib/utils.ts"]
+    }
+  ]
+}

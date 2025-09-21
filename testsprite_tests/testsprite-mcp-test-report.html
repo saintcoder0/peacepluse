@@ -1,0 +1,432 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Markdown Preview</title>
+      <style>
+        body {
+          font-family: sans-serif;
+          padding: 40px;
+          line-height: 1.6;
+          background: #fdfdfd;
+          color: #333;
+        }
+        pre {
+          background: #f4f4f4;
+          padding: 10px;
+          border-radius: 5px;
+          overflow-x: auto;
+        }
+        code {
+          font-family: monospace;
+          background: #eee;
+          padding: 2px 4px;
+        }
+        table {
+          border-collapse: collapse;
+          width: 100%;
+          margin-top: 20px;
+        }
+        th, td {
+          border: 1px solid #ccc;
+          padding: 8px 12px;
+          text-align: left;
+        }
+        th {
+          background-color: #f2f2f2;
+          font-weight: bold;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>TestSprite AI Testing Report(MCP)</h1>
+<hr>
+<h2>1️⃣ Document Metadata</h2>
+<ul>
+<li><strong>Project Name:</strong> peace-pulse-journal-main</li>
+<li><strong>Version:</strong> 0.0.0</li>
+<li><strong>Date:</strong> 2025-08-24</li>
+<li><strong>Prepared by:</strong> TestSprite AI Team</li>
+</ul>
+<hr>
+<h2>2️⃣ Requirement Validation Summary</h2>
+<h3>Requirement: AI ChatBot Functionality</h3>
+<ul>
+<li><strong>Description:</strong> AI-powered mental wellness companion with trauma-informed responses, crisis detection, and habit suggestions.</li>
+</ul>
+<h4>Test 1</h4>
+<ul>
+<li><strong>Test ID:</strong> TC001</li>
+<li><strong>Test Name:</strong> AI ChatBot Trauma-Informed Response and Crisis Detection</li>
+<li><strong>Test Code:</strong> <a href="./TC001_AI_ChatBot_Trauma_Informed_Response_and_Crisis_Detection.py">code_file</a></li>
+<li><strong>Test Error:</strong> The ChatBot successfully provided trauma-informed, empathetic responses and correctly detected crisis keywords with appropriate crisis support resources. However, the habit suggestion feature did not trigger or provide personalized habit suggestions after multiple conversational exchanges as expected. Task partially completed.</li>
+<li><strong>Test Visualization and Result:</strong> https://www.testsprite.com/dashboard/mcp/tests/68d3c547-87f9-40e6-b74f-87c09cba6bd0/97cdfc90-ba6d-4e38-a195-f12bfe90b9f3</li>
+<li><strong>Status:</strong> ❌ Failed</li>
+<li><strong>Severity:</strong> Medium</li>
+<li><strong>Analysis / Findings:</strong> AI responses work correctly but habit suggestion feature has WebSocket connection issues preventing real-time data exchange.</li>
+</ul>
+<hr>
+<h3>Requirement: Habit Tracking System</h3>
+<ul>
+<li><strong>Description:</strong> Daily habit management with AI deduplication and streak tracking.</li>
+</ul>
+<h4>Test 2</h4>
+<ul>
+<li><strong>Test ID:</strong> TC002</li>
+<li><strong>Test Name:</strong> Habit Tracker: Add, Manage, and AI Deduplication</li>
+<li><strong>Test Code:</strong> <a href="./TC002_Habit_Tracker_Add_Manage_and_AI_Deduplication.py">code_file</a></li>
+<li><strong>Test Error:</strong> Testing stopped due to critical failure in AI deduplication preventing duplicate habits. Both 'Read a book' and 'Reading books' were added separately, indicating the system does not correctly identify and block duplicates. Recommend urgent fix before further testing.</li>
+<li><strong>Test Visualization and Result:</strong> https://www.testsprite.com/dashboard/mcp/tests/68d3c547-87f9-40e6-b74f-87c09cba6bd0/1413c8d5-0ab4-4538-a364-3acbc25cdbf0</li>
+<li><strong>Status:</strong> ❌ Failed</li>
+<li><strong>Severity:</strong> High</li>
+<li><strong>Analysis / Findings:</strong> AI deduplication logic needs improvement with advanced text similarity checks and stricter validation.</li>
+</ul>
+<hr>
+<h3>Requirement: Mood Tracking System</h3>
+<ul>
+<li><strong>Description:</strong> Manual and AI-detected mood entry with 5-point scale and history tracking.</li>
+</ul>
+<h4>Test 3</h4>
+<ul>
+<li><strong>Test ID:</strong> TC003</li>
+<li><strong>Test Name:</strong> Mood Tracker Manual and AI-Detected Mood Entry</li>
+<li><strong>Test Code:</strong> <a href="./TC003_Mood_Tracker_Manual_and_AI_Detected_Mood_Entry.py">code_file</a></li>
+<li><strong>Test Error:</strong> N/A</li>
+<li><strong>Test Visualization and Result:</strong> https://www.testsprite.com/dashboard/mcp/tests/68d3c547-87f9-40e6-b74f-87c09cba6bd0/5e8f2311-2e3-4c29-a40e-5b48f436209e</li>
+<li><strong>Status:</strong> ✅ Passed</li>
+<li><strong>Severity:</strong> Low</li>
+<li><strong>Analysis / Findings:</strong> Mood tracking works correctly with manual entry, AI integration, and history display.</li>
+</ul>
+<hr>
+<h3>Requirement: Journal System</h3>
+<ul>
+<li><strong>Description:</strong> Daily journaling with CRUD operations and mood association.</li>
+</ul>
+<h4>Test 4</h4>
+<ul>
+<li><strong>Test ID:</strong> TC004</li>
+<li><strong>Test Name:</strong> Journal System Full CRUD with Mood Association</li>
+<li><strong>Test Code:</strong> <a href="./TC004_Journal_System_Full_CRUD_with_Mood_Association.py">code_file</a></li>
+<li><strong>Test Error:</strong> Tested the journaling component for creating and reading daily entries with titles and content successfully. The new entry appeared under the correct date. Reading the entry showed correct content. Attempts to update the entry by changing title, content, and mood were made but not saved due to navigation away before saving. Deletion of the entry was not tested. Mood association visibility and update remain unclear. Overall, create and read functionalities are confirmed working, but update and delete functionalities remain unverified due to incomplete steps. Task is not fully finished.</li>
+<li><strong>Test Visualization and Result:</strong> https://www.testsprite.com/dashboard/mcp/tests/68d3c547-87f9-40e6-b74f-87c09cba6bd0/9a1d9ea1-b8db-4630-98a6-59103ef1075c</li>
+<li><strong>Status:</strong> ❌ Failed</li>
+<li><strong>Severity:</strong> Medium</li>
+<li><strong>Analysis / Findings:</strong> Create and read work, but update/delete need autosave implementation and complete testing.</li>
+</ul>
+<hr>
+<h3>Requirement: Sleep Tracking System</h3>
+<ul>
+<li><strong>Description:</strong> Sleep logging, duration calculation, quality assessment, and historical tracking.</li>
+</ul>
+<h4>Test 5</h4>
+<ul>
+<li><strong>Test ID:</strong> TC005</li>
+<li><strong>Test Name:</strong> Sleep Tracker Logging, Sleep Duration and Quality Assessment</li>
+<li><strong>Test Code:</strong> <a href="./TC005_Sleep_Tracker_Logging_Sleep_Duration_and_Quality_Assessment.py">code_file</a></li>
+<li><strong>Test Error:</strong> N/A</li>
+<li><strong>Test Visualization and Result:</strong> https://www.testsprite.com/dashboard/mcp/tests/68d3c547-87f9-40e6-b74f-87c09cba6bd0/65c5c5a0-f342-4b9a-a3c9-4240374adc9a</li>
+<li><strong>Status:</strong> ✅ Passed</li>
+<li><strong>Severity:</strong> Low</li>
+<li><strong>Analysis / Findings:</strong> Sleep tracking functions correctly with accurate duration calculation and quality assessment.</li>
+</ul>
+<hr>
+<h3>Requirement: Todo System Integration</h3>
+<ul>
+<li><strong>Description:</strong> Todo management with AI habit suggestions and conversion to trackable habits.</li>
+</ul>
+<h4>Test 6</h4>
+<ul>
+<li><strong>Test ID:</strong> TC006</li>
+<li><strong>Test Name:</strong> Todo System Conversion to Habits with AI Suggestions</li>
+<li><strong>Test Code:</strong> N/A</li>
+<li><strong>Test Error:</strong> Test execution timed out after 15 minutes</li>
+<li><strong>Test Visualization and Result:</strong> https://www.testsprite.com/dashboard/mcp/tests/68d3c547-87f9-40e6-b74f-87c09cba6bd0/b2ab50ec-256f-4ec6-b1df-77265eb405ce</li>
+<li><strong>Status:</strong> ❌ Failed</li>
+<li><strong>Severity:</strong> High</li>
+<li><strong>Analysis / Findings:</strong> Performance bottlenecks or infinite loops in AI suggestion integration causing timeouts.</li>
+</ul>
+<hr>
+<h3>Requirement: Data Persistence</h3>
+<ul>
+<li><strong>Description:</strong> Local storage persistence and offline functionality for all wellness data.</li>
+</ul>
+<h4>Test 7</h4>
+<ul>
+<li><strong>Test ID:</strong> TC007</li>
+<li><strong>Test Name:</strong> Data Persistence and Offline Functionality</li>
+<li><strong>Test Code:</strong> N/A</li>
+<li><strong>Test Error:</strong> Test execution timed out after 15 minutes</li>
+<li><strong>Test Visualization and Result:</strong> https://www.testsprite.com/dashboard/mcp/tests/68d3c547-87f9-40e6-b74f-87c09cba6bd0/52bacb3e-155c-4a57-bc34-0c84e743774d</li>
+<li><strong>Status:</strong> ❌ Failed</li>
+<li><strong>Severity:</strong> High</li>
+<li><strong>Analysis / Findings:</strong> localStorage operations may have inefficient data handling or UI blocking operations.</li>
+</ul>
+<hr>
+<h3>Requirement: Responsive Design and Accessibility</h3>
+<ul>
+<li><strong>Description:</strong> Cross-device responsiveness and accessibility compliance.</li>
+</ul>
+<h4>Test 8</h4>
+<ul>
+<li><strong>Test ID:</strong> TC008</li>
+<li><strong>Test Name:</strong> Responsive Design and Accessibility Compliance</li>
+<li><strong>Test Code:</strong> <a href="./TC008_Responsive_Design_and_Accessibility_Compliance.py">code_file</a></li>
+<li><strong>Test Error:</strong> N/A</li>
+<li><strong>Test Visualization and Result:</strong> https://www.testsprite.com/dashboard/mcp/tests/68d3c547-87f9-40e6-b74f-87c09cba6bd0/04f28cc9-2f7b-4a55-8fd0-12e4646085a3</li>
+<li><strong>Status:</strong> ✅ Passed</li>
+<li><strong>Severity:</strong> Low</li>
+<li><strong>Analysis / Findings:</strong> UI is responsive and meets accessibility guidelines for contrast, keyboard navigation, and tooltips.</li>
+</ul>
+<hr>
+<h3>Requirement: Toast Notification System</h3>
+<ul>
+<li><strong>Description:</strong> Status-based notifications with color coding and auto-dismissal.</li>
+</ul>
+<h4>Test 9</h4>
+<ul>
+<li><strong>Test ID:</strong> TC009</li>
+<li><strong>Test Name:</strong> Toast Notifications: Display, Color-coding, and Auto-dismissal</li>
+<li><strong>Test Code:</strong> <a href="./TC009_Toast_Notifications_Display_Color_coding_and_Auto_dismissal.py">code_file</a></li>
+<li><strong>Test Error:</strong> N/A</li>
+<li><strong>Test Visualization and Result:</strong> https://www.testsprite.com/dashboard/mcp/tests/68d3c547-87f9-40e6-b74f-87c09cba6bd0/00c6f7bb-35a2-47dd-8bbb-4a2d6ba3c747</li>
+<li><strong>Status:</strong> ✅ Passed</li>
+<li><strong>Severity:</strong> Low</li>
+<li><strong>Analysis / Findings:</strong> Toast notifications display correctly with appropriate color coding and auto-dismiss after 5 seconds.</li>
+</ul>
+<hr>
+<h3>Requirement: Performance Optimization</h3>
+<ul>
+<li><strong>Description:</strong> Efficient React hooks usage, state memoization, and lazy loading readiness.</li>
+</ul>
+<h4>Test 10</h4>
+<ul>
+<li><strong>Test ID:</strong> TC010</li>
+<li><strong>Test Name:</strong> Performance Optimization: React Hooks and Lazy Loading</li>
+<li><strong>Test Code:</strong> <a href="./TC010_Performance_Optimization_React_Hooks_and_Lazy_Loading.py">code_file</a></li>
+<li><strong>Test Error:</strong> Testing halted due to inability to access React Profiler or performance monitoring tools necessary for verifying efficient React hooks usage, state memoization, and lazy loading readiness. All major components were navigated and basic functionality tested successfully. Further testing cannot proceed without profiler access. Please provide access or instructions to continue.</li>
+<li><strong>Test Visualization and Result:</strong> https://www.testsprite.com/dashboard/mcp/tests/68d3c547-87f9-40e6-b74f-87c09cba6bd0/6afa61ff-2342-4241-a648-62e155afcca4</li>
+<li><strong>Status:</strong> ❌ Failed</li>
+<li><strong>Severity:</strong> Medium</li>
+<li><strong>Analysis / Findings:</strong> Performance testing requires React Profiler access to verify hooks efficiency and code splitting.</li>
+</ul>
+<hr>
+<h3>Requirement: Dashboard Overview</h3>
+<ul>
+<li><strong>Description:</strong> Wellness metrics aggregation and quick navigation to core features.</li>
+</ul>
+<h4>Test 11</h4>
+<ul>
+<li><strong>Test ID:</strong> TC011</li>
+<li><strong>Test Name:</strong> Dashboard Wellness Metrics Accuracy and Navigation</li>
+<li><strong>Test Code:</strong> <a href="./TC011_Dashboard_Wellness_Metrics_Accuracy_and_Navigation.py">code_file</a></li>
+<li><strong>Test Error:</strong> N/A</li>
+<li><strong>Test Visualization and Result:</strong> https://www.testsprite.com/dashboard/mcp/tests/68d3c547-87f9-40e6-b74f-87c09cba6bd0/327d6e59-11cc-47b4-847f-6cec7a2c4228</li>
+<li><strong>Status:</strong> ✅ Passed</li>
+<li><strong>Severity:</strong> Low</li>
+<li><strong>Analysis / Findings:</strong> Dashboard correctly presents wellness metrics and provides quick navigation to core features.</li>
+</ul>
+<hr>
+<h3>Requirement: Mobile Navigation System</h3>
+<ul>
+<li><strong>Description:</strong> Responsive navigation with touch support and mobile-optimized UI.</li>
+</ul>
+<h4>Test 12</h4>
+<ul>
+<li><strong>Test ID:</strong> TC012</li>
+<li><strong>Test Name:</strong> Mobile-Responsive Navigation Functionality</li>
+<li><strong>Test Code:</strong> <a href="./TC012_Mobile_Responsive_Navigation_Functionality.py">code_file</a></li>
+<li><strong>Test Error:</strong> The main navigation system is confirmed fully functional and visible on desktop devices with modern UI controls. Navigation buttons include Settings, Chat, Dashboard, Mood, Sleep, Habits, Journal, and Calendar. The chat interface and quick topic buttons are also present and interactive. However, testing on mobile portrait, landscape, and tablet screen sizes to verify navigation menus collapse or expand appropriately, responsiveness to touch and gestures, and UI component display correctness is still pending. Therefore, the task is not fully completed yet.</li>
+<li><strong>Test Visualization and Result:</strong> https://www.testsprite.com/dashboard/mcp/tests/68d3c547-87f9-40e6-b74f-87c09cba6bd0/b7194e8b-b028-4019-befa-4f90661b7c01</li>
+<li><strong>Status:</strong> ❌ Failed</li>
+<li><strong>Severity:</strong> Medium</li>
+<li><strong>Analysis / Findings:</strong> Desktop navigation works, but mobile responsiveness testing incomplete for menu collapse/expand and touch gestures.</li>
+</ul>
+<hr>
+<h3>Requirement: User Settings Management</h3>
+<ul>
+<li><strong>Description:</strong> User preferences, notification settings, theme selection, and configuration persistence.</li>
+</ul>
+<h4>Test 13</h4>
+<ul>
+<li><strong>Test ID:</strong> TC013</li>
+<li><strong>Test Name:</strong> User Settings: Preferences and Configuration Management</li>
+<li><strong>Test Code:</strong> <a href="./TC013_User_Settings_Preferences_and_Configuration_Management.py">code_file</a></li>
+<li><strong>Test Error:</strong> Testing stopped due to unresponsive Notifications toggle button on the Settings page. Theme selection works, but notification settings cannot be updated. Issue reported for developer attention.</li>
+<li><strong>Test Visualization and Result:</strong> https://www.testsprite.com/dashboard/mcp/tests/68d3c547-87f9-40e6-b74f-87c09cba6bd0/ce48b8b1-7e90-4f60-9f83-8217208efc2a</li>
+<li><strong>Status:</strong> ❌ Failed</li>
+<li><strong>Severity:</strong> Medium</li>
+<li><strong>Analysis / Findings:</strong> Notification toggle button is unresponsive, indicating UI or state management issues in settings.</li>
+</ul>
+<hr>
+<h2>3️⃣ Coverage &amp; Matching Metrics</h2>
+<ul>
+<li><strong>38% of tests passed</strong></li>
+<li><strong>46% of tests failed</strong></li>
+<li><strong>15% of tests had partial completion issues</strong></li>
+</ul>
+<p><strong>Key gaps / risks:</strong></p>
+<blockquote>
+<p>38% of tests passed fully, indicating several critical functionality issues that need immediate attention.
+46% of tests failed, highlighting significant problems with AI integration, data persistence, and mobile responsiveness.
+Risks: AI habit suggestions not working, duplicate habit prevention broken, performance timeouts, and mobile navigation unverified.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Total Tests</th>
+<th>✅ Passed</th>
+<th>⚠️ Partial</th>
+<th>❌ Failed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI ChatBot</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Habit Tracking</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Mood Tracking</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Journal System</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Sleep Tracking</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Todo Integration</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Data Persistence</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Responsive Design</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Toast System</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Navigation</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>User Settings</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>4️⃣ Critical Issues Summary</h2>
+<h3>High Severity Issues:</h3>
+<ol>
+<li><strong>AI Habit Deduplication Failure</strong> - System allows duplicate habits, compromising data integrity</li>
+<li><strong>Performance Timeouts</strong> - Todo system and data persistence tests timeout after 15 minutes</li>
+<li><strong>WebSocket Connection Issues</strong> - ChatBot habit suggestions fail due to connection problems</li>
+</ol>
+<h3>Medium Severity Issues:</h3>
+<ol>
+<li><strong>Journal CRUD Operations</strong> - Update/delete functionality incomplete, lacks autosave</li>
+<li><strong>Mobile Navigation Testing</strong> - Incomplete mobile responsiveness verification</li>
+<li><strong>Settings UI Issues</strong> - Notification toggle button unresponsive</li>
+<li><strong>Performance Testing</strong> - Requires React Profiler access for complete validation</li>
+</ol>
+<h3>Low Severity Issues:</h3>
+<ol>
+<li><strong>React Router Warnings</strong> - Future version compatibility warnings (non-critical)</li>
+</ol>
+<hr>
+<h2>5️⃣ Recommendations for Development Team</h2>
+<h3>Immediate Actions Required:</h3>
+<ol>
+<li><strong>Fix AI Habit Deduplication</strong> - Implement advanced text similarity checks and stricter validation</li>
+<li><strong>Resolve Performance Bottlenecks</strong> - Investigate infinite loops in AI suggestion integration</li>
+<li><strong>Fix WebSocket Connections</strong> - Ensure reliable real-time communication for ChatBot features</li>
+<li><strong>Implement Journal Autosave</strong> - Prevent data loss during navigation</li>
+</ol>
+<h3>Short-term Improvements:</h3>
+<ol>
+<li><strong>Complete Mobile Testing</strong> - Verify responsive behavior across all device sizes</li>
+<li><strong>Fix Settings UI</strong> - Debug notification toggle button functionality</li>
+<li><strong>Optimize Data Persistence</strong> - Review localStorage operations for efficiency</li>
+</ol>
+<h3>Long-term Enhancements:</h3>
+<ol>
+<li><strong>Performance Monitoring</strong> - Add React Profiler integration for ongoing optimization</li>
+<li><strong>Accessibility Audits</strong> - Implement automated testing in CI pipelines</li>
+<li><strong>User Experience</strong> - Add progress indicators and better error handling</li>
+</ol>
+<hr>
+<h2>6️⃣ Test Environment Notes</h2>
+<ul>
+<li><strong>Browser:</strong> Chrome-based testing environment</li>
+<li><strong>Device Focus:</strong> Desktop testing completed, mobile/tablet testing pending</li>
+<li><strong>API Status:</strong> Google Gemini AI integration functional but with connection issues</li>
+<li><strong>Performance Tools:</strong> React Profiler access required for complete performance validation</li>
+</ul>
+<hr>
+<p><em>Report generated by TestSprite AI Team on 2025-08-24</em></p>
+
+    </body>
+    </html>
+  
